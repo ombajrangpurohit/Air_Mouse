@@ -6,7 +6,7 @@ import time as t
 
 # --- CONFIG ---
 # Get your key from https://aistudio.google.com/
-API_KEY = "PUT_GEMINI_API_KEY_HERE"
+API_KEY = "API_KEY" # 1. Get a fresh key from AI Studio
 client = ai.Client(api_key=API_KEY)
 
 # --- AUTOMATION TOOLS ---
