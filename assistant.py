@@ -6,7 +6,7 @@ import time as t
 
 # --- CONFIG ---
 # Get your key from https://aistudio.google.com/
-API_KEY = "AIzaSyDBSMeCSnzT_A0JV1a00vyKLfbaOuBT7xg"
+API_KEY = "PUT_GEMINI_API_KEY_HERE"
 client = ai.Client(api_key=API_KEY)
 
 # --- AUTOMATION TOOLS ---
@@ -106,7 +106,7 @@ def listen():
 
 def run_axiom():
     chat = client.chats.create(
-        model="gemini-2.0-flash", 
+        model="gemini-2.0-flash-lite", 
         config=types.GenerateContentConfig(
             tools=my_tools,
             system_instruction="You are axiom. Sleek and professional. Use tools for PC control."
